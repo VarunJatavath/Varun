@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventConnect - Luxury Event Planning Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>EventConnect</h2>
+                <span class="brand-tagline">Premium Event Planning</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#planners" class="nav-link">Planners</a>
+                <a href="#catering" class="nav-link">Catering</a>
+                <a href="#about" class="nav-link">About</a>
+                <button class="btn btn--primary btn--sm">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1757180550/pplx_project_search_images/80c3ae71e01aac3aca15b50db759316892d437ca.png" alt="Luxury Wedding Musicians" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Create Unforgettable Moments</h1>
+                <p class="hero-subtitle">Connect with verified premium event planners and make your celebrations extraordinary</p>
+                <div class="hero-search">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search by service or location..." class="search-input">
+                        <select class="search-select">
+                            <option value="">All Services</option>
+                            <option value="full-planning">Full Event Planning</option>
+                            <option value="photography">Photography</option>
+                            <option value="catering">Catering</option>
+                            <option value="musicians">Musicians</option>
+                            <option value="decorators">Decorators</option>
+                            <option value="venues">Venues</option>
+                        </select>
+                        <button class="btn btn--primary search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explore Our Services</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🎯</div>
+                    <h3>Full Event Planning</h3>
+                    <p>Complete event management from start to finish</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>Professional photographers and videographers</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Catering</h3>
+                    <p>Food and beverage services</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎵</div>
+                    <h3>Musicians</h3>
+                    <p>Live bands, DJs, and entertainment</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Decorators</h3>
+                    <p>Theme decoration and styling</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏛️</div>
+                    <h3>Venues</h3>
+                    <p>Event spaces and locations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Planners Section -->
+    <section id="planners" class="featured-planners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Event Planners</h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                    <button class="filter-btn" data-filter="mid-range">Mid-range</button>
+                    <button class="filter-btn" data-filter="budget">Budget</button>
+                </div>
+            </div>
+            <div class="planners-grid" id="plannersGrid">
+                <!-- Planners will be populated by JavaScript -->
+            </div>
+            <div class="text-center">
+                <button class="btn btn--outline btn--lg">View All Planners</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How EventConnect Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Search</h3>
+                    <p>Discover verified event planners based on your needs, budget, and location</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Compare & Choose</h3>
+                    <p>View portfolios, read reviews, and compare services to find the perfect match</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Book & Celebrate</h3>
+                    <p>Secure your booking and let our experts create an unforgettable event</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Catering Section -->
+    <section id="catering" class="food-catering">
+        <div class="container">
+            <div class="catering-content">
+                <div class="catering-text">
+                    <h2 class="section-title">Premium Food Catering</h2>
+                    <p class="catering-subtitle">Order food for your events with our dedicated service team</p>
+                    <div class="catering-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">👨‍🍳</span>
+                            <span>Professional chefs and quality ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚚</span>
+                            <span>On-time delivery with serving team</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📝</span>
+                            <span>Customizable menu for any guest count</span>
+                        </div>
+                    </div>
+                    <div class="catering-pricing">
+                        <h3>Sample Pricing</h3>
+                        <div class="pricing-grid">
+                            <div class="price-item">
+                                <span class="dish-name">Veg Biryani</span>
+                                <span class="price">₹180/plate</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="dish-name">Chicken Biryani</span>
+                                <span class="price">₹250/plate</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="dish-name">Paneer Butter Masala</span>
+                                <span class="price">₹220/plate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--lg">Order Catering</button>
+                </div>
+                <div class="catering-image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1757180550/pplx_project_search_images/497d192ca802276a98091ebd6987c483e710a59f.png" alt="Colorful Event Catering Setup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EventConnect</h3>
+                    <p>Your bridge to extraordinary celebrations</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#" target="_blank">Event Planning</a>
+                        <a href="#" target="_blank">Photography</a>
+                        <a href="#" target="_blank">Catering</a>
+                        <a href="#" target="_blank">Musicians</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#" target="_blank">Help Center</a>
+                        <a href="#" target="_blank">Contact Us</a>
+                        <a href="#" target="_blank">Terms of Service</a>
+                        <a href="#" target="_blank">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="plannerModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
